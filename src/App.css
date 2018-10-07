@@ -4,7 +4,12 @@
   text-align: center;
   background-size: contain;
 }
-
+.img{
+  flex: 1;
+  width: 50%;
+  height: 50%;
+  filter: opacity(80%);
+}
 .samp {
   flex: 1;
   filter: contrast(125%);

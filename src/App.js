@@ -3,6 +3,7 @@ import './App.css';
 import sample2 from './sample2.png';
 import worldmap from './worldmap.jpg';
 import cover from './cover.png';
+import bg1 from './bg1.jpg';
 
 class App extends Component {
   static navigationOptions = {
@@ -13,7 +14,9 @@ class App extends Component {
       <div className="App">
       <div className="samp">
       <h1>Norah</h1>
-      <img src={cover} alt="cover"/>
+      <div classname="img">
+        <img src={bg1} alt="bg1"/>
+      </div>
       </div>
       </div>
     );
