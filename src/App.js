@@ -15,7 +15,7 @@ class App extends Component {
       <div className="samp">
       <h1>Norah</h1>
       <div classname="img">
-        <img src={bg1} alt="bg1"/>
+        <img src={cover} alt="cover"/>
       </div>
       </div>
       </div>
