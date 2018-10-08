@@ -4,6 +4,7 @@ import sample2 from './sample2.png';
 import worldmap from './worldmap.jpg';
 import cover from './cover.png';
 import bg1 from './bg1.jpg';
+import bitmap from './bitmap.png';
 
 class App extends Component {
   static navigationOptions = {
@@ -13,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
       <div className="samp">
-      <h1>Norah</h1>
+      <img src={bitmap} alt="bitmap"/>
       <div classname="img">
         <img src={cover} alt="cover"/>
       </div>
