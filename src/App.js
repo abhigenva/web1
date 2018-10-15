@@ -5,7 +5,7 @@ import worldmap from './worldmap.jpg';
 import cover from './cover.png';
 import bg1 from './bg1.jpg';
 import bitmap from './bitmap.png';
-import {Nav, Navbar, NavItem} from 'react-bootstrap';
+import {Nav, Navbar, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 class App extends Component {
   static navigationOptions = {
@@ -21,6 +21,16 @@ class App extends Component {
             <img src={bitmap} alt="bitmap"/>
           </Navbar.Brand>
         </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem eventKey={1} href="#">
+            Blog
+            </NavItem>
+            <NavItem eventKey={2} href="#">
+            Contact
+            </NavItem>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
 
       <div classname="img">
