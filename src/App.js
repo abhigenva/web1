@@ -5,6 +5,7 @@ import worldmap from './worldmap.jpg';
 import cover from './cover.png';
 import bg1 from './bg1.jpg';
 import bitmap from './bitmap.png';
+import {Nav, Navbar, NavItem} from 'react-bootstrap';
 
 class App extends Component {
   static navigationOptions = {
@@ -14,7 +15,14 @@ class App extends Component {
     return (
       <div className="App">
       <div className="samp">
-      <img src={bitmap} alt="bitmap"/>
+      <Navbar>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <img src={bitmap} alt="bitmap"/>
+          </Navbar.Brand>
+        </Navbar.Header>
+      </Navbar>
+
       <div classname="img">
         <img src={cover} alt="cover"/>
       </div>
