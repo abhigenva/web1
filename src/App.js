@@ -19,18 +19,11 @@ class App extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <img src={bitmap} alt="bitmap"/>
+            <div className="header">
+              <h4>Contact</h4>
+            </div>
           </Navbar.Brand>
         </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="#">
-            Blog
-            </NavItem>
-            <NavItem eventKey={2} href="#">
-            Contact
-            </NavItem>
-          </Nav>
-        </Navbar.Collapse>
       </Navbar>
 
       <div classname="img">

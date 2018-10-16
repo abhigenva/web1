@@ -10,6 +10,9 @@
   height: 50%;
   filter: opacity(80%);
 }
+.header{
+  
+}
 .samp {
   flex: 1;
   filter: contrast(125%);
