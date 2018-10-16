@@ -11,7 +11,9 @@
   filter: opacity(80%);
 }
 .header{
-  
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
 }
 .samp {
   flex: 1;

@@ -20,7 +20,14 @@ class App extends Component {
           <Navbar.Brand>
             <img src={bitmap} alt="bitmap"/>
             <div className="header">
+            <ul>
+              <li>
               <h4>Contact</h4>
+              </li>
+              <li>
+              <h4>Blog</h4>
+              </li>
+            </ul>
             </div>
           </Navbar.Brand>
         </Navbar.Header>
