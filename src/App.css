@@ -3,17 +3,19 @@
   height: auto;
   text-align: center;
   background-size: contain;
+  filter: opacity(90%);
 }
 .img{
   flex: 1;
   width: 50%;
   height: 50%;
-  filter: opacity(80%);
+  filter: opacity(20%);
 }
 .header{
   flex: 1;
   text-align: right;
   margin-right: 20px;
+  filter: opacity(80%);
 }
 .samp {
   flex: 1;

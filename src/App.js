@@ -18,11 +18,11 @@ class App extends Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <img src={bitmap} alt="bitmap"/>
+            <a href="HOME"><img src={bitmap} alt="bitmap"/></a>
             <div className="header">
             <ul>
               <li>
-              <h4>Contact</h4>
+              <a href="NAME"><h4>Contact</h4></a>
               </li>
               <li>
               <h4>Blog</h4>
@@ -32,9 +32,9 @@ class App extends Component {
           </Navbar.Brand>
         </Navbar.Header>
       </Navbar>
-
+      <hr/>
       <div classname="img">
-        <img src={cover} alt="cover"/>
+        <img src={cover} alt="cover" border="5"/>
       </div>
       </div>
       </div>
