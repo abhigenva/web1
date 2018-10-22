@@ -3,7 +3,8 @@
   height: auto;
   text-align: center;
   background-size: contain;
-  filter: opacity(90%);
+  filter: opacity(95%);
+  filter: brightness(110%);
 }
 .img{
   flex: 1;
