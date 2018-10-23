@@ -5,6 +5,7 @@ import worldmap from './worldmap.jpg';
 import cover from './cover.png';
 import bg1 from './bg1.jpg';
 import bitmap from './bitmap.png';
+import MediaQuery from 'react-responsive';
 import {Nav, Navbar, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 class App extends Component {
@@ -36,7 +37,7 @@ class App extends Component {
       <div classname="img">
         <img src={cover} alt="cover" border="5"/>
       </div>
-      
+
       <a href="#"><h3>Back to Top</h3></a>
       </div>
       </div>
