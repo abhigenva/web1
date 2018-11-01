@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div className="App">
       <div className="samp">
-      <Navbar>
+      <Navbar color="red">
         <Navbar.Header>
           <Navbar.Brand>
             <a href="HOME"><img src={bitmap} alt="bitmap"/></a>
