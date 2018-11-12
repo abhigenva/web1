@@ -21,21 +21,21 @@ class App extends Component {
           <Navbar.Brand>
             <a href="HOME"><img src={bitmap} alt="bitmap"/></a>
             <div className="header">
-            <ul>
-              <li>
-              <a href="NAME"><h4>Contact</h4></a>
-              </li>
-              <li>
-              <a href="Blog"><h4>Blog</h4></a>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                <a href="NAME"><h4>Contact</h4></a>
+                </li>
+                <li>
+                <a href="Blog"><h4>Blog</h4></a>
+                </li>
+              </ul>
             </div>
           </Navbar.Brand>
         </Navbar.Header>
       </Navbar>
       <hr/>
       <div classname="img">
-        <img src={cover} alt="cover" border="5"/>
+        <img src={cover} alt="cover" />
       </div>
 
       <a href="#"><h3>Back to Top</h3></a>
