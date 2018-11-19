@@ -16,25 +16,17 @@ class App extends Component {
     return (
       <div className="App">
       <div className="samp">
-      <Navbar color="red">
+      <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="HOME"><img className="logo" src={bitmap} alt="bitmap"/></a>
-            <div className="header">
-              <ul>
-                <li>
-                <a href="About"><h4>About</h4></a>
-                </li>
-                <li>
-                <a href="Contact"><h4>Contact</h4></a>
-                </li>
-                <li>
-                <a href="Blog"><h4>Blog</h4></a>
-                </li>
-              </ul>
-            </div>
           </Navbar.Brand>
         </Navbar.Header>
+        <Nav>
+          <NavItem eventKey={1} href="About">About</NavItem>
+          <NavItem eventKey={2} href="Contact">Contact</NavItem>
+          <NavItem eventKey={3} href="Blog">Blog</NavItem>
+        </Nav>
       </Navbar>
       <hr/>
       <div classname="img">
