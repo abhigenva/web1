@@ -19,11 +19,14 @@ class App extends Component {
       <Navbar color="red">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="HOME"><img src={bitmap} alt="bitmap"/></a>
+            <a href="HOME"><img className="logo" src={bitmap} alt="bitmap"/></a>
             <div className="header">
               <ul>
                 <li>
-                <a href="NAME"><h4>Contact</h4></a>
+                <a href="About"><h4>About</h4></a>
+                </li>
+                <li>
+                <a href="Contact"><h4>Contact</h4></a>
                 </li>
                 <li>
                 <a href="Blog"><h4>Blog</h4></a>
