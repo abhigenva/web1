@@ -6,12 +6,33 @@ import cover from './cover.png';
 import bg1 from './bg1.jpg';
 import bitmap from './bitmap.png';
 import MediaQuery from 'react-responsive';
-import {Nav, Navbar, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Nav, Navbar, NavItem, NavDropdown, MenuItem, Image} from 'react-bootstrap';
 
 class App extends Component {
   static navigationOptions = {
     title: 'Home',
   };
+  constructor(props) {
+    super(props);
+    this.state = {
+      time: new Date().toLocaleTimeString(),
+      date: new Date().toDateString()
+    };
+  }
+  componentDidMount() {
+    this.intervalID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
+  tick() {
+    this.setState({
+      time: new Date().toLocaleTimeString()
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -19,7 +40,7 @@ class App extends Component {
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="HOME"><img className="logo" src={bitmap} alt="bitmap"/></a>
+            <a href="HOME"><Image className="logo" src={bitmap} alt="bitmap" responsive /></a>
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
@@ -29,9 +50,12 @@ class App extends Component {
         </Nav>
       </Navbar>
       <div classname="img">
-        <img src={cover} alt="cover" />
+        <Image src={cover} alt="cover" responsive />
       </div>
-
+      <p className="App-clock">
+          {this.state.date}
+          <p>{this.state.time}</p>
+      </p>
       <a href="#"><h3>Back to Top</h3></a>
       </div>
       </div>
