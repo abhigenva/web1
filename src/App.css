@@ -34,7 +34,7 @@ ul {
     margin: 0;
     padding: 0;
 }
-li a:hover {
+a:hover {
     color: #ff9933;
 }
 .logo {

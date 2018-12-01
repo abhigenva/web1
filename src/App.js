@@ -28,7 +28,6 @@ class App extends Component {
           <NavItem eventKey={3} href="Blog">Blog</NavItem>
         </Nav>
       </Navbar>
-      <hr/>
       <div classname="img">
         <img src={cover} alt="cover" />
       </div>
