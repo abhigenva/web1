@@ -37,18 +37,26 @@ class App extends Component {
     return (
       <div className="App">
       <div className="samp">
-      <Navbar>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="HOME"><Image className="logo" src={bitmap} alt="bitmap" responsive /></a>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav>
-          <NavItem eventKey={1} href="About">About</NavItem>
-          <NavItem eventKey={2} href="Contact">Contact</NavItem>
-          <NavItem eventKey={3} href="Blog">Blog</NavItem>
-        </Nav>
-      </Navbar>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><a href="HOME"><img className="logo" src={bitmap} alt="bitmap"/></a></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div classname="img">
         <Image src={cover} alt="cover" responsive />
       </div>
