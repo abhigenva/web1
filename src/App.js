@@ -14,10 +14,18 @@ class App extends Component {
   };
   constructor(props) {
     super(props);
+    this.onChange = this.onChange.bind(this);
     this.state = {
       time: new Date().toLocaleTimeString(),
-      date: new Date().toDateString()
+      date: new Date().toDateString(),
+      progress : 0,
+      name: ''
     };
+  }
+  onChange(e){
+    this.setState({
+      name: e.target.value
+    });
   }
   componentDidMount() {
     this.intervalID = setInterval(
@@ -30,7 +38,10 @@ class App extends Component {
   }
   tick() {
     this.setState({
-      time: new Date().toLocaleTimeString()
+      time: new Date().toLocaleTimeString(),
+    });
+    this.setState({
+      progress: this.state.progress + 1
     });
   }
   render() {
@@ -49,7 +60,7 @@ class App extends Component {
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#123">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -60,13 +71,30 @@ class App extends Component {
           </ul>
         </div>
       </nav>
+      <div>
+        <label for='name-input'>Name: </label>
+        <input
+        id='name-input'
+        onChange={this.onChange}
+        value={this.state.name}
+        size="32" />
+      </div>
+      <p>This text is no longer correct - <s>Hey this is incorrect.</s></p>
       <div classname="img">
         <Image src={cover} alt="cover" responsive />
       </div>
+      <br/>
+      <progress value={this.state.progress} max="100"></progress>
+      <br/>
       <p className="App-clock">
           {this.state.date}
           <p>{this.state.time}</p>
       </p>
+      <div id="123">
+        <p>Lorem ipsum dolor</p>
+        <p>We open at <time>10:00</time> every morning.</p>
+        <p>I have a date on <time datetime="2019-02-14 20:00">Valentines day</time>.</p>
+      </div>
       <a href="#"><h3>Back to Top</h3></a>
       </div>
       </div>
