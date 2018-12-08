@@ -7,12 +7,13 @@ import bg1 from './bg1.jpg';
 import bitmap from './bitmap.png';
 import MediaQuery from 'react-responsive';
 import {Nav, Navbar, NavItem, NavDropdown, MenuItem, Image} from 'react-bootstrap';
-import { StickyContainer, Sticky } from 'react-sticky';
+import Sticky from 'react-stickynode';
 
 class App extends Component {
   static navigationOptions = {
     title: 'Home',
   };
+
   constructor(props) {
     super(props);
     this.onChange = this.onChange.bind(this);
@@ -48,15 +49,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <div>
-        <StickyContainer>
-          {/* Other elements can be in between `StickyContainer` and `Sticky`,
-          but certain styles can break the positioning logic used. */}
-          <Sticky topOffset={80}>{({ style }) => <h1 style={style}>Sticky element</h1>}</Sticky>
-          {/* ... */}
-        </StickyContainer>
-      </div>
       <div className="samp">
+      <Sticky enabled={true}>
+        <h1>This is sticky gea</h1>
+      </Sticky>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><a href="HOME"><img className="logo" src={bitmap} alt="bitmap"/></a></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
