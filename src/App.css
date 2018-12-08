@@ -34,3 +34,9 @@ a:hover {
   width: auto;
   align-items: center;
 }
+.header {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  position: fixed;
+}
