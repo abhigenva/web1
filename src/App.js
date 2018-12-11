@@ -56,16 +56,19 @@ class App extends Component {
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"><a href="HOME"><img className="logo" src={bitmap} alt="bitmap"/></a></a>
-        <div class="navbar-nav">
+        <nav class="menu">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">FB</a>
+              <a class="xunk-social" href="https://www.facebook.com/Norahism" target="_blank">FB</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Insta</a>
+              <a class="xunk-social" href="https://www.instagram.com/norahism" target="_blank">Insta</a>
+            </li>
+            <li class="nav-item">
+              <a class="xunk-social" href="https://www.twitter.com/norah_official" target="_blank">Twitter</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
