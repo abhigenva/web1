@@ -56,19 +56,23 @@ class App extends Component {
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"><a href="HOME"><img className="logo" src={bitmap} alt="bitmap"/></a></a>
-        <nav class="menu">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="xunk-social" href="https://www.facebook.com/Norahism" target="_blank">FB</a>
-            </li>
-            <li class="nav-item">
-              <a class="xunk-social" href="https://www.instagram.com/norahism" target="_blank">Insta</a>
-            </li>
-            <li class="nav-item">
-              <a class="xunk-social" href="https://www.twitter.com/norah_official" target="_blank">Twitter</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="row">
+          <div class="col-sm-4">
+            <h5>
+            <a href="https://www.facebook.com/Norahism" target="_blank">FB</a>
+            </h5>
+          </div>
+          <div class="col-sm-4">
+            <p>
+            <a href="https://www.instagram.com/norahism" target="_blank">Insta</a>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+            <a href="https://www.twitter.com/norah_official" target="_blank">Twitter</a>
+            </p>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -97,6 +101,17 @@ class App extends Component {
       <p>This text is no longer correct - <s>Hey this is incorrect.</s></p>
       <div classname="img">
         <Image src={cover} alt="cover" responsive />
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-body">Basic card 1</div>
+        </div>
+        <div class="card">
+          <div class="card-body">Basic card 2</div>
+        </div>
+        <div class="card">
+          <div class="card-body">Basic card 3</div>
+        </div>
       </div>
       <br/>
       <progress value={this.state.progress} max="100"></progress>
